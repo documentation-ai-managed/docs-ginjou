@@ -1,0 +1,120 @@
+---
+title: Quickstart Guide
+description: Set up your Ginjou account and create your first documentation project in just a few minutes.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for version control integration
+
+<Callout kind="info">
+  Ginjou works entirely in your browser. No downloads required.
+</Callout>
+
+## Create Your Ginjou Account
+
+Sign up in under a minute.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="globe">
+    Navigate to [https://app.ginjou.com](https://app.ginjou.com) and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, create a password, and verify your account via email link.
+  </Step>
+  <Step title="Complete Onboarding" icon="check-circle">
+    Answer a few quick questions about your project to customize your workspace.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Use a strong password. Enable two-factor authentication in your [account settings](/introduction#settings).
+</Callout>
+
+## Set Up Your First Project
+
+Create a new documentation space.
+
+<Steps>
+  <Step title="New Project" icon="plus">
+    From the dashboard, click **New Project** and select **Documentation Space**.
+  </Step>
+  <Step title="Name It" icon="edit-3">
+    Enter a name like `My Project Docs` and choose a slug (e.g., `my-project-docs`).
+  </Step>
+  <Step title="Initialize" icon="sparkles">
+    Ginjou auto-generates a starter structure with `introduction.mdx`, `quickstart.mdx`, and `faq.mdx`.
+  </Step>
+</Steps>
+
+## Add and Organize Initial Documents
+
+Populate your space with content.
+
+<Tabs>
+  <Tab title="Markdown Page" icon="file-text">
+    Click **New Page** > **Markdown**.
+
+    ````markdown
+    ```mdx
+    ---
+    title: My First Page
+    description: Your custom content here.
+    ---
+
+    ## Welcome
+
+    Start writing your docs!
+    ```
+    ````
+  </Tab>
+  <Tab title="Embed Code" icon="code">
+    Use the editor to add interactive examples.
+
+    <CodeGroup tabs="JavaScript,Python">
+    ````javascript
+    console.log("Hello, Ginjou!");
+    ````
+    ````python
+    print("Hello, Ginjou!")
+    ````
+    </CodeGroup>
+  </Tab>
+</Tabs>
+
+Drag pages in the sidebar to organize into folders. Use the search bar to find documents quickly.
+
+## Basic Interface Tour
+
+Get familiar with key areas.
+
+<Columns cols={3}>
+  <Card title="Sidebar" icon="menu" href="#sidebar">
+    Navigate projects, pages, and settings.
+  </Card>
+  <Card title="Editor" icon="edit-3" href="#editor">
+    Real-time MDX preview with components.
+  </Card>
+  <Card title="Publish" icon="upload-cloud" href="#publish">
+    Deploy to a custom domain instantly.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Learn Markdown" icon="book-open" href="/introduction">
+    Master Ginjou's MDX components.
+  </Card>
+  <Card title="Advanced Features" icon="sparkles" href="/authentication">
+    Integrate auth and webhooks.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+  Congratulations! Your first Ginjou project is live. Explore the [changelog](/changelog) for updates.
+</Callout>

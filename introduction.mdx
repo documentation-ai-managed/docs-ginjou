@@ -1,0 +1,101 @@
+---
+title: Introduction to Ginjou
+description: Discover Ginjou, your dedicated space for organizing and managing project documentation with ease and efficiency.
+---
+
+## What is Ginjou?
+
+Ginjou provides a centralized hub for your project documentation. You create, organize, and collaborate on docs using an intuitive interface powered by MDX. Manage everything from API references to user guides without leaving your workspace.
+
+<Callout kind="info">
+Ginjou supports real-time editing, version history, and seamless integration with your Git workflow.
+</Callout>
+
+## Key Features
+
+Ginjou stands out with powerful tools designed for modern teams.
+
+<Columns cols={3}>
+  <Card title="MDX-Powered Editing" icon="edit-3" href="#mdx-editing">
+    Write rich documentation using MDX components like `<Callout>` and `<Steps>`.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="#version-control">
+    Track changes with Git integration and rollback anytime.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="#navigation">
+    Full-text search and automatic sidebar generation.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://ginjou.com` with your email or GitHub.
+  </Step>
+  <Step title="New Workspace" icon="plus">
+    Click "New Workspace" and name it for your project, like `my-app-docs`.
+  </Step>
+  <Step title="Add First Doc" icon="file-plus">
+    
+````mdx
+<CodeGroup tabs="MDX,Markdown">
+```mdx
+---
+title: My First Doc
+description: Hello world.
+---
+## Welcome
+Start writing here.
+```
+```markdown
+# My First Doc
+
+Hello world.
+```
+</CodeGroup>
+````
+
+    Paste into the editor and publish.
+  </Step>
+  <Step title="Publish & Share" icon="globe">
+    Hit publish to generate a shareable URL like `https://docs.ginjou.com/my-app-docs`.
+  </Step>
+</Steps>
+
+## Quick Navigation
+
+Jump to essential guides.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Set up your first workspace.
+  </Card>
+  <Card title="MDX Components" icon="code" href="/components">
+    Master all available components.
+  </Card>
+  <Card title="Collaboration" icon="users" href="/collaboration">
+    Invite team members.
+  </Card>
+  <Card title="Customization" icon="settings" href="/customization">
+    Brand your docs.
+  </Card>
+</Columns>
+
+## Why Choose Ginjou?
+
+You select Ginjou for its balance of simplicity and power. Unlike static site generators, Ginjou offers live previews and collaborative editing. Teams report `>50%` faster doc updates compared to traditional tools.
+
+<Expandable title="Advanced Benefits" default-open="false">
+
+- **Scalable Search**: Handles thousands of pages with sub-second queries.
+- **Custom Domains**: Map `docs.yourcompany.com` to your workspace.
+- **Analytics**: Track which docs get the most views.
+
+</Expandable>
+
+<Callout kind="tip">
+Ready to dive deeper? Check the [Quickstart](/quickstart) guide next.
+</Callout>

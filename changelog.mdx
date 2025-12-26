@@ -1,0 +1,147 @@
+---
+title: Changelog
+description: Stay updated with the latest releases, features, and improvements in Ginjou.
+---
+
+## Overview
+
+Ginjou continuously improves to help you organize and manage your project documentation more effectively. Review the latest releases below to see new features, bug fixes, and improvements. You receive automatic updates when using the Ginjou CLI or hosted dashboard.
+
+<Callout kind="info">
+  Check your current version by running `ginjou --version` in your terminal. Upgrade using the instructions in the [Upgrade Guide](#upgrade-guide) section.
+</Callout>
+
+## Recent Releases
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time collaboration for teams, allowing multiple users to edit docs simultaneously.
+- Introduced custom themes with your brand color (`#3B82F6`) support via the new `theme` configuration.
+
+## Bug Fixes
+
+- Fixed rendering issues with nested `{code blocks}` in MDX files.
+- Resolved authentication errors when using `{API_KEY}` in CI/CD pipelines.
+
+## Improvements
+
+- Enhanced search performance by `>50%` for large documentation sites.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Integrated Mermaid diagram support for flowcharts directly in your docs.
+- Added export to PDF and HTML with one-click from the dashboard.
+
+## Improvements
+
+- Optimized build times for sites with `<1000` pages.
+- Better mobile responsiveness for documentation previews.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core documentation workspace with MDX editing and preview.
+- Version control integration with GitHub for seamless workflows.
+- API endpoints for programmatic doc management at `https://api.example.com/v1/docs`.
+
+## Breaking Changes
+
+- Updated CLI commands: Use `ginjou deploy` instead of `ginjou publish`.
+
+</Update>
+
+## Upgrade Guide
+
+Follow these steps to upgrade Ginjou to the latest version.
+
+<Steps>
+  <Step title="Backup Your Project" icon="database">
+
+    Create a backup of your documentation repository.
+
+    ```bash
+    git commit -am "Backup before upgrade"
+    git push origin main
+    ```
+
+  </Step>
+  <Step title="Update Package" icon="download">
+    <Tabs>
+      <Tab title="npm" icon="package">
+        ```bash
+        npm update ginjou@latest
+        ```
+      </Tab>
+      <Tab title="yarn" icon="package">
+        ```bash
+        yarn upgrade ginjou@latest
+        ```
+      </Tab>
+      <Tab title="pnpm" icon="package">
+        ```bash
+        pnpm update ginjou@latest
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Verify Installation" icon="check-circle">
+
+    Run the version check.
+
+    <CodeGroup tabs="CLI,Dashboard">
+      ````bash
+      ginjou --version
+      ````
+
+      ````bash
+      # Visit https://dashboard.example.com and check the footer
+      ````
+    </CodeGroup>
+
+  </Step>
+  <Step title="Deploy Changes" icon="rocket">
+    Redeploy your site.
+    ```bash
+    ginjou deploy
+    ```
+  </Step>
+</Steps>
+
+<Callout kind="tip" default-open="true">
+  After upgrading, review [breaking changes](#) in the release notes above. Test in a staging environment first.
+</Callout>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="book-open" href="/quickstart">
+    Get up and running in minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Tailor Ginjou to your needs.
+  </Card>
+</Columns>
+
+<Expandable title="Upcoming Features" default-open="false">
+
+In v1.3.0 (expected Q4 2024):
+
+- AI-powered content suggestions.
+- Advanced analytics for doc usage.
+- Webhook support at `https://your-webhook-url.com/webhook`.
+
+Stay tuned by following Ginjou on GitHub.
+
+</Expandable>
